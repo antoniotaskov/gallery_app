@@ -46,13 +46,14 @@ class DetailScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  SizedBox(
-                    height: 300, // You can adjust the height as needed
-                    child: SingleChildScrollView(
-                      child: Text(
-                        arguments['description'],
-                        style: const TextStyle(
-                          fontSize: 16,
+                  SafeArea(
+                    child: Expanded(
+                      child: SingleChildScrollView(
+                        child: Text(
+                          arguments['description'],
+                          style: const TextStyle(
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                     ),
